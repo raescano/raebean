@@ -5,11 +5,13 @@
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 .left-bar,
 .right-bar {
-  display: none; }
+  display: none;
+}
 
 .top-bar {
   height: 20vh;
@@ -17,9 +19,11 @@
   position: fixed;
   top: 0;
   z-index: 10;
-  background: white; }
+  background: white;
+}
 
 @media (min-width: 1050px) {
+
   .left-bar,
   .right-bar {
     display: block;
@@ -27,32 +31,44 @@
     width: 20%;
     position: absolute;
     z-index: 10;
-    background: white; }
+    background: white;
+  }
+
   .left-bar {
     left: 0;
-    top: 0; }
+    top: 0;
+  }
+
   .right-bar {
     right: 0;
-    top: 0; } }
+    top: 0;
+  }
+}
 
 .kusuri {
-  background: #F7FDF6; }
+  background: #F7FDF6;
+}
 
 .pillar {
-  background: #8DB5CE; }
+  background: #8DB5CE;
+}
 
 .bercassi {
-  background: #EC7F8E; }
+  background: #EC7F8E;
+}
 
 .misc {
-  background: lightgreen; }
+  background: lightgreen;
+}
 
 .about {
-  background: lightsalmon; }
+  background: lightsalmon;
+}
 
 main {
   height: 100vh;
-  width: 100%; }
+  width: 100%;
+}
 
 .kusuri,
 .pillar,
@@ -67,54 +83,74 @@ main {
   left: 0;
   display: -ms-grid;
   display: grid;
-  place-items: center; }
-  .kusuri .home-content,
-  .kusuri .about-content,
-  .pillar .home-content,
-  .pillar .about-content,
-  .bercassi .home-content,
-  .bercassi .about-content,
-  .misc .home-content,
-  .misc .about-content,
-  .about .home-content,
-  .about .about-content {
-    width: 80%;
-    margin: 0 auto; }
-    .kusuri .home-content h1,
-    .kusuri .about-content h1,
-    .pillar .home-content h1,
-    .pillar .about-content h1,
-    .bercassi .home-content h1,
-    .bercassi .about-content h1,
-    .misc .home-content h1,
-    .misc .about-content h1,
-    .about .home-content h1,
-    .about .about-content h1 {
-      font-size: 10vmin; }
-    .kusuri .home-content h3,
-    .kusuri .about-content h3,
-    .pillar .home-content h3,
-    .pillar .about-content h3,
-    .bercassi .home-content h3,
-    .bercassi .about-content h3,
-    .misc .home-content h3,
-    .misc .about-content h3,
-    .about .home-content h3,
-    .about .about-content h3 {
-      font-size: 6vmin; }
-    .kusuri .home-content p,
-    .kusuri .about-content p,
-    .pillar .home-content p,
-    .pillar .about-content p,
-    .bercassi .home-content p,
-    .bercassi .about-content p,
-    .misc .home-content p,
-    .misc .about-content p,
-    .about .home-content p,
-    .about .about-content p {
-      font-size: 2vmin; }
+  place-items: center;
+}
+
+.kusuri .home-content,
+.kusuri .about-content,
+.pillar .home-content,
+.pillar .about-content,
+.bercassi .home-content,
+.bercassi .about-content,
+.misc .home-content,
+.misc .about-content,
+.about .home-content,
+.about .about-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.kusuri .home-content h1,
+.kusuri .about-content h1,
+.pillar .home-content h1,
+.pillar .about-content h1,
+.bercassi .home-content h1,
+.bercassi .about-content h1,
+.misc .home-content h1,
+.misc .about-content h1,
+.about .home-content h1,
+.about .about-content h1 {
+  font-size: 10vmin;
+  font-family: poppins, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.kusuri .home-content h3,
+.kusuri .about-content h3,
+.pillar .home-content h3,
+.pillar .about-content h3,
+.bercassi .home-content h3,
+.bercassi .about-content h3,
+.misc .home-content h3,
+.misc .about-content h3,
+.about .home-content h3,
+.about .about-content h3 {
+  font-size: 3vmin;
+  font-family: poppins, sans-serif;
+  font-weight: 300;
+}
+
+.kusuri .home-content p,
+.kusuri .about-content p,
+.pillar .home-content p,
+.pillar .about-content p,
+.bercassi .home-content p,
+.bercassi .about-content p,
+.misc .home-content p,
+.misc .about-content p,
+.about .home-content p,
+.about .about-content p {
+  font-size: 2vmin;
+  font-family: poppins, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  white-space: wrap;
+  max-width: 400px;
+}
 
 @media (min-width: 1050px) {
+
   .kusuri,
   .pillar,
   .bercassi,
@@ -128,7 +164,9 @@ main {
     left: 20%;
     display: -ms-grid;
     display: grid;
-    place-items: center; } }
+    place-items: center;
+  }
+}
 
 h1,
 h2,
@@ -136,13 +174,15 @@ h3,
 h4,
 h5 {
   font-family: Starling, serif;
-  margin: 0; }
+  margin: 0;
+}
 
 *,
 *::before,
 *::after {
   font-family: Freight Sans Pro, sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+}
 
 header {
   position: fixed;
@@ -160,40 +200,59 @@ header {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  text-transform: uppercase; }
-  header .site-branding {
-    margin-left: 5%; }
-    header .site-branding h1 {
-      font-size: 18px; }
-    header .site-branding h3 {
-      display: none; }
-  header .top-nav {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-right: 5%;
-    grid-gap: 20px; }
-    header .top-nav a {
-      text-decoration: none;
-      color: black;
-      font-size: 12px; }
+  text-transform: uppercase;
+}
+
+header .site-branding {
+  margin-left: 5%;
+}
+
+header .site-branding h1 {
+  font-size: 18px;
+  font-family: soleil, sans-serif;
+}
+
+header .site-branding h3 {
+  display: none;
+}
+
+header .top-nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 5%;
+  grid-gap: 20px;
+}
+
+header .top-nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
 
 @media (min-width: 1050px) {
   header .site-branding h1 {
-    font-size: 36px; }
+    font-size: 36px;
+  }
+
   header .site-branding h3 {
-    display: block; }
+    display: block;
+  }
+
   header .top-nav a {
-    font-size: 18px; } }
+    font-size: 18px;
+  }
+}
 
 nav {
   width: 100%;
   position: fixed;
-  bottom: 0; }
+  bottom: 0;
+}
 
 .nav-items {
   height: 15vh;
@@ -208,15 +267,55 @@ nav {
   align-items: center;
   margin: 0 auto;
   list-style: none;
-  z-index: 900; }
-  .nav-items a {
-    text-decoration: none;
-    color: black;
-    font-size: 3vmin;
-    font-weight: 400; }
-    .nav-items a.selected {
-      font-weight: 700; }
+  z-index: 900;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: black;
+  font-size: 3vmin;
+  font-weight: 400;
+}
+
+.nav-items a.selected {
+  font-weight: 700;
+}
 
 @media (min-width: 768px) {
   nav .nav-items {
-    width: 60%; } }
+    width: 60%;
+  }
+}
+
+.social-links {
+  padding-top: 0;
+  padding-bottom: 1em;
+}
+
+.social-links {
+  display: flex;
+  align-content: center;
+}
+
+.social-links ul {
+  margin: 0;
+  padding: 0;
+}
+
+.social-links ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.social-links ul li a {
+  display: block;
+  padding: 0;
+  margin-top: 1em;
+}
+
+.social-links img {
+  width: 50%;
+  padding: 0;
+}
