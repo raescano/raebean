@@ -54,7 +54,7 @@
 }
 
 .kahe {
-  background: #EC7F8E;
+  background: #D0E6EA;
 }
 
 .misc {
@@ -62,7 +62,7 @@
 }
 
 .about {
-  background: lightsalmon;
+  background: #BDD5CB;
 }
 
 main {
@@ -313,7 +313,7 @@ header .top-nav a:hover {
 @media (min-width: 1050px) {
   header {
     align-items: flex-start;
-    padding-top: 1.2em;
+    padding-top: 3em;
   }
 
   header .site-branding h1 {
@@ -355,7 +355,9 @@ nav {
   text-decoration: none;
   color: #325547;
   font-size: 3vmin;
+  font-family: poppins, sans-serif;
   font-weight: 400;
+  font-style: normal;
 }
 
 .nav-items a:hover {
@@ -364,6 +366,8 @@ nav {
 
 .nav-items a.selected {
   font-weight: 700;
+  font-family: poppins, sans-serif;
+  font-style: normal;
 }
 
 @media (min-width: 768px) {
@@ -386,7 +390,7 @@ nav {
   margin: 0;
   margin-top: .5em;
   padding: 0;
-  width: 50%;
+  width: 30%;
   display: flex;
   justify-content: space-between;
 }
@@ -396,8 +400,8 @@ nav {
   display: inline-block;
   margin: 0;
   padding: 0;
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
   overflow: hidden;
 
 }
@@ -416,6 +420,22 @@ nav {
   padding: 0;
 }
 
-.about .home-content {
+.about .home-presentation {
+  display: flex;
   color: #fff;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about .home-content h1 {
+  font-size: 3em;
+}
+
+.about .home-content p {
+  padding-bottom: 1em;
+}
+
+.about .home-presentation .container {
+  display: flex;
+  flex-direction: column;
 }
