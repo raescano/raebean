@@ -53,7 +53,7 @@
   background: #8DB5CE;
 }
 
-.bercassi {
+.kahe {
   background: #EC7F8E;
 }
 
@@ -72,11 +72,11 @@ main {
 
 .kusuri,
 .pillar,
-.bercassi,
+.kahe,
 .misc,
 .about {
   z-index: 1;
-  height: 60vh;
+  max-height: 60vh;
   width: 100%;
   position: absolute;
   top: 20%;
@@ -90,22 +90,37 @@ main {
 .kusuri .about-content,
 .pillar .home-content,
 .pillar .about-content,
-.bercassi .home-content,
-.bercassi .about-content,
+.kahe .home-content,
+.kahe .about-content,
 .misc .home-content,
 .misc .about-content,
 .about .home-content,
 .about .about-content {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  /* If you want text on top just take out reverse */
+  flex-direction: column-reverse;
+}
+
+.home-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.home-presentation {
   width: 80%;
   margin: 0 auto;
+  height: 100vh;
 }
 
 .kusuri .home-content h1,
 .kusuri .about-content h1,
 .pillar .home-content h1,
 .pillar .about-content h1,
-.bercassi .home-content h1,
-.bercassi .about-content h1,
+.kahe .home-content h1,
+.kahe .about-content h1,
 .misc .home-content h1,
 .misc .about-content h1,
 .about .home-content h1,
@@ -120,8 +135,8 @@ main {
 .kusuri .about-content h3,
 .pillar .home-content h3,
 .pillar .about-content h3,
-.bercassi .home-content h3,
-.bercassi .about-content h3,
+.kahe .home-content h3,
+.kahe .about-content h3,
 .misc .home-content h3,
 .misc .about-content h3,
 .about .home-content h3,
@@ -135,8 +150,8 @@ main {
 .kusuri .about-content p,
 .pillar .home-content p,
 .pillar .about-content p,
-.bercassi .home-content p,
-.bercassi .about-content p,
+.kahe .home-content p,
+.kahe .about-content p,
 .misc .home-content p,
 .misc .about-content p,
 .about .home-content p,
@@ -153,11 +168,11 @@ main {
 
   .kusuri,
   .pillar,
-  .bercassi,
+  .kahe,
   .misc,
   .about {
     z-index: 1;
-    height: 60vh;
+    /* height: 60vh; */
     width: 60%;
     position: absolute;
     top: calc(50% - 30vh);
@@ -166,7 +181,25 @@ main {
     display: grid;
     place-items: center;
   }
+
+
+  .kusuri .home-content,
+  .kusuri .about-content,
+  .pillar .home-content,
+  .pillar .about-content,
+  .kahe .home-content,
+  .kahe .about-content,
+  .misc .home-content,
+  .misc .about-content,
+  .about .home-content,
+  .about .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
+
+
+
 
 h1,
 h2,
@@ -208,12 +241,21 @@ header .site-branding {
 }
 
 header .site-branding h1 {
+  color: #7F9F92;
+  margin-top: 1.2em;
+  line-height: 1em;
   font-size: 18px;
-  font-family: soleil, sans-serif;
+  font-family: poppins, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 header .site-branding h3 {
+  color: #7F9F92;
   display: none;
+  font-family: poppins, sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 header .top-nav {
@@ -226,12 +268,26 @@ header .top-nav {
   align-items: center;
   margin-right: 5%;
   grid-gap: 20px;
+  font-family: poppins, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 header .top-nav a {
+  height: 5vh;
   text-decoration: none;
-  color: black;
+  color: #325547;
   font-size: 12px;
+  font-family: poppins, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  /* padding-bottom: 2px; */
+  border-bottom: 4px solid transparent;
+}
+
+header .top-nav a:hover {
+  border-bottom: 1px solid #325547;
 }
 
 @media (min-width: 1050px) {
@@ -272,9 +328,13 @@ nav {
 
 .nav-items a {
   text-decoration: none;
-  color: black;
+  color: #325547;
   font-size: 3vmin;
   font-weight: 400;
+}
+
+.nav-items a:hover {
+  color: #91b6a7;
 }
 
 .nav-items a.selected {
@@ -307,6 +367,7 @@ nav {
   display: inline-block;
   margin: 0;
   padding: 0;
+
 }
 
 .social-links ul li a {
@@ -316,6 +377,13 @@ nav {
 }
 
 .social-links img {
-  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  /* height: auto; */
   padding: 0;
+}
+
+.about .home-content {
+  color: #fff;
 }
